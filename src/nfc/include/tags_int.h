@@ -30,6 +30,10 @@
 // T1T command and response definitions
 ******************************************************************************/
 
+#if __cplusplus > 199711L
+#define register      // Deprecated in C++11.
+#endif  // #if __cplusplus > 199711L
+
 typedef struct {
   uint8_t opcode;
   uint8_t cmd_len;
